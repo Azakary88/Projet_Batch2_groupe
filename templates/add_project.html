@@ -1,0 +1,24 @@
+<!-- templates/add_project.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajouter un projet</title>
+</head>
+<body>
+    <h1>Ajouter un nouveau projet</h1>
+    <form method="POST" action="/add_project">
+        <label for="name">Nom du projet:</label>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="description">Description:</label>
+        <textarea id="description" name="description" required></textarea><br><br>
+
+        <label for="tokens_required">Tokens requis:</label>
+        <input type="number" id="tokens_required" name="tokens_required" required><br><br>
+
+        <button type="submit">Ajouter le projet</button>
+    </form>
+</body>
+</html>

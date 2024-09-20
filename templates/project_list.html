@@ -1,0 +1,22 @@
+<!-- templates/project_list.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liste des projets</title>
+</head>
+<body>
+    <h1>Liste des projets</h1>
+    <ul>
+        {% for project in projects %}
+        <li>
+            <strong>{{ project.name }}</strong><br>
+            {{ project.description }}<br>
+            Tokens requis: {{ project.tokens_required }}<br>
+            <a href="/vote/{{ project.id }}">Vote (1 token)</a>
+        </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

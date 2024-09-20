@@ -1,0 +1,25 @@
+<!-- templates/add_user.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajouter un Utilisateur</title>
+</head>
+<body>
+    <h1>Ajouter un Utilisateur</h1>
+        <form action="{{ url_for('add_user') }}" method="POST">
+            <label for="username">Nom d'utilisateur :</label>
+            <input type="text" name="username" id="username" required>
+            
+            <label for="password">Mot de passe :</label>
+            <input type="password" name="password" id="password" required>
+            
+            <label for="tokens">Tokens :</label>
+            <input type="number" name="tokens" id="tokens" required>
+            
+            <button type="submit">Ajouter l'utilisateur</button>
+        </form>
+    
+</body>
+</html>

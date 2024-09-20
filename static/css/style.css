@@ -1,0 +1,40 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #97f8ff;
+    margin: 0;
+    padding: 20px;
+}
+h1 {
+    text-align: center;
+    color: black;
+}
+.project-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.project-card {
+    background-color: #2408a0;
+    border: 1px solid #2110b8;
+    border-radius: 8px;
+    margin: 15px;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    transition: transform 0.2s;
+}
+.project-card:hover {
+    transform: scale(1.05);
+}
+.vote-button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.vote-button:hover {
+    background-color: #218838;
+}
